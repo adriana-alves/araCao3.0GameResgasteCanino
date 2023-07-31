@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="game.js"></script>
+</head>
+
+<body class="cenario" onresize="ajustarTamanhoCenario()">
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="vida1" src="imagens/coracaoCheio.png"/>
+            <img id="vida2" src="imagens/coracaoCheio.png"/>
+            <img id="vida3" src="imagens/coracaoCheio.png"/>
+        </div>
+        
+        <div class="timer">Tempo restante: <span id="timer"></span></div>
+		</div>
+
+		<script>
+            setInterval(function() { 
+				posicaoRandomica()
+			}, 2000)
+
+            
+			document.getElementById('timer').innerHTML = tempo
+
+			var mostrarDog = setInterval(function() { 
+				posicaoRandomica()
+			}, resgatarDogTime)
+      </script>
+</body>
+</html>
