@@ -4,15 +4,15 @@ var largura = 0
 var vidas = 1
 var tempo = 15
 
-var resgatarDogTime  = 6000
+var resgatarDogTime  = 2000
 
 var nivel = window.location.search
 nivel = nivel.replace('?', '')
 
 if(nivel === 'nivel1') {
-	resgatarDogTime  = 6000
+	resgatarDogTime  = 2000
 } else if(nivel === 'nivel2') {
-	resgatarDogTime  = 3000
+	resgatarDogTime  = 1000
 } else if (nivel === 'nivel3') {
 	resgatarDogTime  = 750
 }
