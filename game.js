@@ -10,9 +10,9 @@ var nivel = window.location.search
 nivel = nivel.replace('?', '')
 
 if(nivel === 'nivel1') {
-	resgatarDogTime  = 2000
+	resgatarDogTime  = 6000
 } else if(nivel === 'nivel2') {
-	resgatarDogTime  = 1000
+	resgatarDogTime  = 2000
 } else if (nivel === 'nivel3') {
 	resgatarDogTime  = 750
 }
